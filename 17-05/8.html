@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const str = prompt("enter string");
+        function fnc(str) {
+            const strLen = str.length
+            let count = 0;
+            let revStr = str.split("").reverse()
+            revStr = revStr.join("")
+            
+            if (str === revStr) {
+              
+                document.write('String is Palindrome');
+            } else {
+                
+                document.write(`<br> String is not a Palindrome`)
+            }
+        }
+        fnc(str);
+    </script>
+</body>
+</html>

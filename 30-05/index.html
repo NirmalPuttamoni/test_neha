@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="lbl"></div>
+
+    <script>
+        let a= [156,150,149,152,151,147];
+        a.push('145');
+        console.log(a);
+
+        let a1=  ['Ram', 'Manas', 'Komali', 'Rajesh']; 
+        a1.pop();
+        console.log(a1);
+
+         let a2= [12, 78,14,20,62];
+         a2.pop();
+         a2.push(25);
+         console.log(a2)
+
+         let a3= ['Burger', 'Sandwich', 'fries', 'Coffee'];
+         a3.shift();
+         console.log(a3);
+
+         let a4= ['Vijayawada','Khammam','Warangal','Hyderabad'];
+         console.log(a4[0]);
+
+            let a5= [12,18,22,34,48,72];
+            a5.unshift(25);
+            console.log(a5);
+
+        let a6 = ["Chair"," Table"," Cupboard"," Bench"," Door"];
+        console.log(a6.length);
+
+        let a7= ['Manish', 'Adarsh', 'Sameer', 'Raman', 'Bhaskar','Teja'];
+        a7.pop();
+        a7.shift();
+        console.log(a7);
+
+        let a8= ['Reliance', 'Titan', 'Wipro', 'Bajaj'];
+        let newa8 = ['Cipla','ITC'];
+        a8.splice(2 , 0 , ...newa8);
+        console.log(a8);
+
+        let a9= [10,14,74,45,52,56,47,40,21];
+        a9.splice(2 , 3);
+        console.log(a9);
+ 
+        let a10= [45,51,36,28,25,17,19,20,25];
+        function fnc(){
+            let min=a10[0];
+            for(let i =0 ; i<a10.length ;i++)
+            {
+                if(a10[i]<min)
+                {
+                    min=a10[i];
+                }
+            }
+            console.log(min);
+        }
+        fnc();
+
+        let a11=['Ravali', 'Rakesh', 'Suman', 'Saikiran', 'Radha', 'Rani'];
+        function fnc1(){
+            for(let i =0 ;i<a11.length ;i++)
+            {
+                if(a11[i]="Radha") console.log("found");
+                else console.log("not found");
+
+            }
+        }
+        fnc1();
+
+        let a12= [20,45,31,39,17,19,40,34,18];
+        let eligible= a12.filter((v) => {
+            return v>=18
+        }
+        );
+        console.log(eligible);
+        
+
+        let a13= ['milk', 'eggs', 'bread', 'butter', 'Cheese', 'Sugar'];
+        console.log(a13.indexOf("Cheese"));
+
+        
+        function Car(make, model, year, color) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.color = color;
+        }
+
+       
+        let myCar = new Car("Hyundai", "Venue", 2021, "blue");
+
+        
+        console.log(myCar.make, myCar.model, myCar.year, myCar.color);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input=[14,13,78,69,47,57,69,16,2,18,35,36];
+        
+        let output=[];
+        
+                // let output = input.filter((v) => {
+                //     if(v%2==0) return v
+                // });
+                // console.log(input)
+                // console.log(output)
+        
+                function fnc(input){
+                    for(let i=0;i<input.length ;i++)
+                        {
+                            if(input[i]%2===0)
+                                {
+                                    output.push(input[i]);
+                                }
+                        }
+                    console.log(output);
+                    
+                }
+                fnc();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav {
+            background-image: url("./images/camera.jpg");
+           
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 500px;
+           
+        }
+        .navbar{
+            display:grid;
+            grid-template-columns:190px 190px 190px ;
+            column-gap: none;
+            background-color: rgb(194, 178, 160);
+            margin-left: 0px;
+          
+        }
+       
+        .navbar a{
+            
+            color:white;
+            font-size: 25px;
+            padding:10px 30px;
+
+            text-align: center;
+            
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar a:hover {
+            background-color:#3e3e3e;
+        }
+        .main .nav p{
+            color: white;
+            font-size: 130px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            padding:40px;
+             line-height: 0;
+            line-height: 0.9;
+            
+        }
+        .content{
+            display: grid;
+            grid-template-columns:  max-content max-content max-content max-content max-content ;
+
+        }
+        .photo img{
+        
+            max-width:250px;
+            max-height:250px;
+            padding:5px;
+            border-radius: 20px;
+            /* box-shadow: #3e3e3e; */
+        }
+        .photo{
+           width:250px;
+           /* height:fit-content+ 50px; */
+        }
+        .photo p{
+            text-align: center;
+            /* width: 250px; */
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* .photo img:hover{
+            background-color: grey ;
+
+
+        } */
+        .caption {
+            text-align: center;
+            width:800px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            margin:auto;
+        }
+        footer {
+            background-color:  rgb(194, 178, 160);
+            /* height:40px; */
+            font-size: 20px;
+            text-align: center;
+            padding:10px 20px;
+            line-height: 1.4;
+        }
+        footer .p1 ,a {
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <a href=""#>Home</a>
+            <a href=""#>About</a>
+            <a href=""#>Contact Us</a>
+        </div>
+        <div class="nav">
+           
+            <p>PHOTOGRAPHY
+                 WEBSITE</p>
+        </div><br><br>
+        <div class="caption">
+        <p>Our photography website takes you on a visual 
+            journey through some of the world's most 
+            awe-inspiring moments and places. The 
+            carefully curated selection showcases the 
+            finest examples of photographic artistry,
+             highlighting the natural beauty and human
+              experiences across the globe.</p></div><br><br>
+        <div class="content">
+            <!-- <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/5a6/afb/e608a355fab813cd531d430812.jpg.webp" alt="">
+                <p>Two worlds divided, New York, USA</p>
+            </div> -->
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/55e/4fe/090f595ddfa20a96d1c00f6936.jpg.webp" alt="">
+                <p>The Supermoon in a radio telescope</p>
+            </div>
+            <div class="photo">
+                    <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/268/157/0dc7db53749bf212d3cf358e4d.jpg.webp" alt="">
+                <p>A temple covered in ash from the Ontake volcanic eruption, Japan</p>
+            </div>
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/097/7c4/88086c5fd18d94c956a579f4fe.jpg.webp" alt="">
+            <p>An Italian beach</p>
+            </div>
+            <div class="photo">
+                    <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/0b1/a6a/b116115dea81fa3eb99d508a30.jpg.webp" alt="">
+            <p>The scarlet eyes of a warty tree frog, Costa Rica</p>
+            </div>
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/931/a1d/07f58656a2944a072d656da25a.jpg.webp" alt="">
+                <p>Flamingos gathered in the shape of a flamingo, Yucatan Peninsula</p>
+            </div>
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/512/b78/8050c0590396d2af5c4586bf03.jpg.webp" alt="">
+                <p>The sea-like dunes of the Namib Desert</p>
+            </div>
+            <!-- <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/097/08e/0f400655b1904f31eae631ea9d.jpg.webp" alt="">
+                <p>Westerdok District, Amsterdam</p>
+            </div> -->
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/1ba/20d/88d2465966b1705e4be0bc0002.jpg.webp" alt="">
+                <p>Frosted trees</p>
+            </div>
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/13b/d8c/e9d4415d349aa7f7089f78bfd3.jpg.webp" alt="">
+                <p>Hello there, sister</p>
+            </div>
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/c33/ff5/dc4ae45ad0bd7296aef291dad8.jpg.webp" alt="">
+                <p>Holiday village near Arkhangelsk, Russia</p>
+            </div>
+            <div class="photo">
+                <img src="https://wl-brightside.cf.tsp.li/resize/728x/webp/8ef/8b2/825e675c6cbf1b9e44261600d7.jpg.webp" alt="">
+                <p>Rango plays guitar</p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer>
+        <p>Thankyou for visiting <a href="#">@HappyPhotos</a></p>
+        <p class="p1">contact us on <a href="#">123456789</a></p>
+    </footer>
+
+</body>
+</html>
